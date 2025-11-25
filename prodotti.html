@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalogo stufe a legna e pellet disponibili in pronta consegna - D'Agostino Giovanni e Marco, Notaresco (TE)">
+    <title>Prodotti in Stock | D'Agostino - Stufe e Caldaie</title>
+
+    <!-- Google Fonts - Inter + Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="header">
+        <div class="container">
+            <a href="prodotti.html" class="logo">
+                <img src="foto/logo.png" alt="D'Agostino" class="logo-img">
+                <span class="logo-text">D'Agostino</span>
+            </a>
+            <nav class="nav">
+                <a href="prodotti.html" class="nav-link active">Catalogo</a>
+            </nav>
+            <a href="https://wa.me/393468088624" class="header-cta" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+                <span>Contattaci</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="prodotti.html" class="mobile-nav-link active">Catalogo</a>
+            <a href="https://wa.me/393468088624" class="mobile-nav-link whatsapp" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Scrivici su WhatsApp
+            </a>
+        </nav>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>I Nostri Prodotti</h1>
+                <p>Stufe selezionate e disponibili per consegna immediata. Qualita garantita dai migliori marchi del settore.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+        <div class="container">
+            <!-- Filters Sidebar -->
+            <aside class="filters" id="filters">
+                <div class="filters-header">
+                    <h3>Filtri</h3>
+                    <button class="filters-close" id="filtersClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Categoria</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="legna">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Stufe a Legna</span>
+                            <span class="option-count">1</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="pellet">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Stufe a Pellet</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="termostufe">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Termostufe</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="caldaie">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Caldaie</span>
+                            <span class="option-count">0</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Brand Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Marchio</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="nordica">
+                            <span class="checkmark"></span>
+                            <span class="option-label">La Nordica Extraflame</span>
+                            <span class="option-count">1</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="dielle">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Dielle</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="nobis">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Nobis</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="thermital">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Thermital</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="moretti">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Moretti Design</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="dalessandro">
+                            <span class="checkmark"></span>
+                            <span class="option-label">D'Alessandro</span>
+                            <span class="option-count">0</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Power Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Potenza</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="0-6">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Fino a 6 kW</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="6-10">
+                            <span class="checkmark"></span>
+                            <span class="option-label">6 - 10 kW</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="10-15">
+                            <span class="checkmark"></span>
+                            <span class="option-label">10 - 15 kW</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="15+">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Oltre 15 kW</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Energy Class Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Classe Energetica</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="energy" value="a++">
+                            <span class="checkmark"></span>
+                            <span class="option-label">A++</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="energy" value="a+">
+                            <span class="checkmark"></span>
+                            <span class="option-label">A+</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="energy" value="a">
+                            <span class="checkmark"></span>
+                            <span class="option-label">A</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="filters-reset">
+                    <i class="fas fa-undo"></i>
+                    Resetta Filtri
+                </button>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-area">
+                <!-- Toolbar -->
+                <div class="toolbar">
+                    <div class="toolbar-left">
+                        <button class="filter-toggle" id="filterToggle">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Filtri</span>
+                        </button>
+                        <p class="results-count"><strong>1</strong> prodotto trovato</p>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="sort-select">
+                            <select id="sortSelect">
+                                <option value="relevance">Rilevanza</option>
+                                <option value="name-asc">Nome A-Z</option>
+                                <option value="name-desc">Nome Z-A</option>
+                                <option value="power-asc">Potenza crescente</option>
+                                <option value="power-desc">Potenza decrescente</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Product Card - Larissa -->
+                    <article class="product-card" data-category="legna" data-brand="nordica" data-power="6-10" data-energy="a+">
+                        <a href="prodotto-larissa.html" class="product-link">
+                            <div class="product-image">
+                                <span class="product-badge available">Disponibile</span>
+                                <img src="media/Larissa HR 1.webp" alt="Stufa a legna Larissa - La Nordica Extraflame" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-brand">La Nordica Extraflame</span>
+                                <h3 class="product-name">Larissa</h3>
+                                <p class="product-category">Stufa a Legna Ventilata</p>
+                                <div class="product-specs">
+                                    <div class="spec">
+                                        <i class="fas fa-fire"></i>
+                                        <span>9,3 kW</span>
+                                    </div>
+                                    <div class="spec">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>86,9%</span>
+                                    </div>
+                                    <div class="spec energy-class">
+                                        <span>A+</span>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="view-details">Scopri di piu <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Placeholder Cards - In arrivo -->
+                    <article class="product-card coming-soon" data-category="pellet" data-brand="" data-power="" data-energy="">
+                        <div class="product-link">
+                            <div class="product-image placeholder">
+                                <span class="product-badge soon">In arrivo</span>
+                                <div class="placeholder-content">
+                                    <i class="fas fa-fire-alt"></i>
+                                    <span>Nuovi prodotti in arrivo</span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-brand">Prossimamente</span>
+                                <h3 class="product-name">Nuovo Modello</h3>
+                                <p class="product-category">Stufa a Pellet</p>
+                                <div class="product-specs placeholder-specs">
+                                    <span>Dettagli disponibili a breve</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card coming-soon" data-category="termostufe" data-brand="" data-power="" data-energy="">
+                        <div class="product-link">
+                            <div class="product-image placeholder">
+                                <span class="product-badge soon">In arrivo</span>
+                                <div class="placeholder-content">
+                                    <i class="fas fa-fire-alt"></i>
+                                    <span>Nuovi prodotti in arrivo</span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-brand">Prossimamente</span>
+                                <h3 class="product-name">Nuovo Modello</h3>
+                                <p class="product-category">Termostufa</p>
+                                <div class="product-specs placeholder-specs">
+                                    <span>Dettagli disponibili a breve</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Empty State (hidden by default) -->
+                <div class="empty-state" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>Nessun prodotto trovato</h3>
+                    <p>Prova a modificare i filtri di ricerca</p>
+                    <button class="btn btn-primary">Resetta Filtri</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Non trovi quello che cerchi?</h2>
+                <p>Contattaci per verificare la disponibilita di altri modelli o per richiedere un preventivo personalizzato.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+393468088624" class="btn btn-light">
+                        <i class="fas fa-phone-alt"></i>
+                        Chiamaci
+                    </a>
+                    <a href="https://wa.me/393468088624" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">D'Agostino</span>
+                    <p>Assistenza tecnica caldaie e stufe dal 1994</p>
+                    <p class="footer-address">Via Valle Vignale, 64024 Notaresco (TE)</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+393283394184">Giovanni: 328 339 4184</a>
+                    <a href="tel:+393468088624">Marco: 346 808 8624</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 D'Agostino Giovanni e Marco - P.IVA 01979250675</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/393468088624" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/catalogo.js"></script>
+</body>
+</html>

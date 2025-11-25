@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stufa a legna Larissa La Nordica Extraflame - Sistema di controllo automatico della combustione, classe A+, 5 stelle. Disponibile presso D'Agostino.">
+    <title>Larissa - Stufa a Legna | D'Agostino</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/prodotto.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="prodotti.html" class="logo">
+                <img src="foto/logo.png" alt="D'Agostino" class="logo-img">
+                <span class="logo-text">D'Agostino</span>
+            </a>
+            <nav class="nav">
+                <a href="prodotti.html" class="nav-link">Catalogo</a>
+            </nav>
+            <a href="https://wa.me/393468088624" class="header-cta" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+                <span>Contattaci</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="prodotti.html" class="mobile-nav-link">Catalogo</a>
+            <a href="https://wa.me/393468088624" class="mobile-nav-link whatsapp" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Scrivici su WhatsApp
+            </a>
+        </nav>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="prodotti.html">Catalogo</a>
+            <span class="separator">/</span>
+            <a href="prodotti.html?categoria=legna">Stufe a Legna</a>
+            <span class="separator">/</span>
+            <span class="current">Larissa</span>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <section class="product-page">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-main">
+                        <span class="availability-badge">
+                            <i class="fas fa-check-circle"></i>
+                            Disponibile
+                        </span>
+                        <img id="mainImage" src="media/Larissa HR 1.webp" alt="Stufa a legna Larissa - La Nordica Extraflame">
+                        <button class="gallery-zoom" aria-label="Zoom immagine">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                    <div class="gallery-thumbs">
+                        <button class="thumb active" onclick="changeImage('media/Larissa HR 1.webp', this)">
+                            <img src="media/Larissa HR 1.webp" alt="Larissa - Vista 1">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-details">
+                    <div class="product-header">
+                        <span class="brand-label">La Nordica Extraflame</span>
+                        <h1 class="product-title">Larissa</h1>
+                        <p class="product-subtitle">Stufa a Legna Ventilata con Controllo Automatico</p>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="key-features">
+                        <div class="feature">
+                            <div class="feature-value">A+</div>
+                            <div class="feature-label">Classe Energetica</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-value">5 <small>stelle</small></div>
+                            <div class="feature-label">DM 186</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-value">9,3 <small>kW</small></div>
+                            <div class="feature-label">Potenza Max</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-value">86,9<small>%</small></div>
+                            <div class="feature-label">Rendimento</div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="product-description">
+                        <p><strong>Larissa</strong> e la nuova stufa a legna ventilata della linea Evolution con sistema di controllo automatico della combustione. Una soluzione tecnologica che garantisce elevata efficienza energetica e comodita di gestione senza precedenti.</p>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="color-selection">
+                        <span class="selection-label">Colore: <strong>Antracite</strong></span>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="Antracite" style="--color: #2d2d2d;">
+                                <span class="sr-only">Antracite</span>
+                            </button>
+                            <button class="color-btn" data-color="Bordeaux" style="--color: #722f37;">
+                                <span class="sr-only">Bordeaux</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CTA Box -->
+                    <div class="cta-box">
+                        <div class="cta-info">
+                            <div class="stock-status">
+                                <i class="fas fa-truck"></i>
+                                <span>Pronta consegna</span>
+                            </div>
+                            <p class="cta-note">Contattaci per un preventivo personalizzato</p>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="tel:+393468088624" class="btn btn-primary btn-block">
+                                <i class="fas fa-phone-alt"></i>
+                                Chiama per Info
+                            </a>
+                            <a href="https://wa.me/393468088624?text=Salve%20sono%20interessato%20alla%20Larissa" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i>
+                                Scrivi su WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Trust Signals -->
+                    <div class="trust-signals">
+                        <div class="signal">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garanzia Ufficiale</span>
+                        </div>
+                        <div class="signal">
+                            <i class="fas fa-tools"></i>
+                            <span>Installazione Professionale</span>
+                        </div>
+                        <div class="signal">
+                            <i class="fas fa-headset"></i>
+                            <span>Assistenza Post-Vendita</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="specifiche">
+                        <i class="fas fa-list-ul"></i>
+                        Specifiche Tecniche
+                    </button>
+                    <button class="tab-btn" data-tab="caratteristiche">
+                        <i class="fas fa-star"></i>
+                        Caratteristiche
+                    </button>
+                    <button class="tab-btn" data-tab="documenti">
+                        <i class="fas fa-file-pdf"></i>
+                        Documenti
+                    </button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Specifiche Tab -->
+                    <div id="specifiche" class="tab-panel active">
+                        <div class="specs-container">
+                            <div class="spec-group">
+                                <h3><i class="fas fa-bolt"></i> Prestazioni</h3>
+                                <dl class="spec-list">
+                                    <div class="spec-row">
+                                        <dt>Potenza termica nominale</dt>
+                                        <dd>5,1 - 9,3 kW</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Rendimento</dt>
+                                        <dd>86,9 - 86,3 %</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Volume riscaldabile</dt>
+                                        <dd>267 m³</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Consumo orario legna</dt>
+                                        <dd>1,3 - 2,5 kg/h</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Classe energetica</dt>
+                                        <dd><span class="badge energy">A+</span></dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Certificazione DM 186</dt>
+                                        <dd><span class="badge stars">5 Stelle</span></dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                            <div class="spec-group">
+                                <h3><i class="fas fa-ruler-combined"></i> Dimensioni</h3>
+                                <dl class="spec-list">
+                                    <div class="spec-row">
+                                        <dt>Larghezza</dt>
+                                        <dd>628 mm</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Altezza</dt>
+                                        <dd>1226 mm</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Profondita</dt>
+                                        <dd>483 mm</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Peso netto</dt>
+                                        <dd>202 kg</dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                            <div class="spec-group">
+                                <h3><i class="fas fa-wind"></i> Canna Fumaria</h3>
+                                <dl class="spec-list">
+                                    <div class="spec-row">
+                                        <dt>Diametro scarico fumi</dt>
+                                        <dd>130 mm</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Posizione uscita fumi</dt>
+                                        <dd>Posteriore / Superiore</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Tiraggio minimo</dt>
+                                        <dd>12 Pa</dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                            <div class="spec-group">
+                                <h3><i class="fas fa-leaf"></i> Emissioni</h3>
+                                <dl class="spec-list">
+                                    <div class="spec-row">
+                                        <dt>CO (13% O2)</dt>
+                                        <dd>0,08 %</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>Polveri</dt>
+                                        <dd>20 mg/Nm³</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>NOx</dt>
+                                        <dd>89 mg/Nm³</dd>
+                                    </div>
+                                    <div class="spec-row">
+                                        <dt>OGC</dt>
+                                        <dd>43 mg/Nm³</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caratteristiche Tab -->
+                    <div id="caratteristiche" class="tab-panel">
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <h4>Controllo Automatico</h4>
+                                <p>Sistema elettronico che regola automaticamente l'ingresso delle arie comburenti per massima efficienza.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <h4>WiFi Integrato</h4>
+                                <p>Modulo WiFi per il controllo remoto tramite app dedicata. Gestisci il riscaldamento ovunque tu sia.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-thermometer-half"></i>
+                                </div>
+                                <h4>Radiocomando</h4>
+                                <p>Radiocomando "palmare" incluso con funzione termostato per controllo preciso della temperatura.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h4>Modalita Eco</h4>
+                                <p>Aumenta fino al 50% la durata delle braci mantenendo il calore piu a lungo.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-fan"></i>
+                                </div>
+                                <h4>Ventilazione Escludibile</h4>
+                                <p>Ventilazione frontale escludibile per funzionamento silenzioso in convezione naturale.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-fire-alt"></i>
+                                </div>
+                                <h4>Focolare Nordiker</h4>
+                                <p>Materiale refrattario brevettato con ampia visione del fuoco attraverso vetro ceramico.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <h4>Ghisa Smaltata</h4>
+                                <p>Frontali, porta, top e basamento in ghisa smaltata per durata superiore e finitura elegante.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-couch"></i>
+                                </div>
+                                <h4>Design Moderno</h4>
+                                <p>Design contemporaneo che si integra perfettamente in ogni tipo di ambiente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Documenti Tab -->
+                    <div id="documenti" class="tab-panel">
+                        <div class="documents-list">
+                            <a href="media/004301605-001 BC LARISSA.16.pdf" class="document-item" target="_blank" rel="noopener">
+                                <div class="document-icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="document-info">
+                                    <h4>Scheda Tecnica</h4>
+                                    <p>Specifiche tecniche complete del prodotto</p>
+                                </div>
+                                <div class="document-action">
+                                    <span class="file-type">PDF</span>
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </a>
+
+                            <a href="media/004301731-001 EB LARISSA.16.pdf" class="document-item" target="_blank" rel="noopener">
+                                <div class="document-icon">
+                                    <i class="fas fa-tag"></i>
+                                </div>
+                                <div class="document-info">
+                                    <h4>Etichetta Energetica</h4>
+                                    <p>Classificazione energetica del prodotto</p>
+                                </div>
+                                <div class="document-action">
+                                    <span class="file-type">PDF</span>
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://www.lanordica-extraflame.com/it/la-nordica/stufe-legna/larissa16" class="document-item" target="_blank" rel="noopener">
+                                <div class="document-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class="document-info">
+                                    <h4>Pagina Ufficiale</h4>
+                                    <p>Visita il sito La Nordica Extraflame</p>
+                                </div>
+                                <div class="document-action">
+                                    <span class="file-type">Link</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Interessato a questo prodotto?</h2>
+                    <p>Contattaci per un preventivo personalizzato o per fissare un appuntamento.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="tel:+393468088624" class="btn btn-light">
+                        <i class="fas fa-phone-alt"></i>
+                        Chiama Ora
+                    </a>
+                    <a href="https://wa.me/393468088624?text=Salve%20sono%20interessato%20alla%20Larissa" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">D'Agostino</span>
+                    <p>Assistenza tecnica caldaie e stufe dal 1994</p>
+                    <p class="footer-address">Via Valle Vignale, 64024 Notaresco (TE)</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+393283394184">Giovanni: 328 339 4184</a>
+                    <a href="tel:+393468088624">Marco: 346 808 8624</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 D'Agostino Giovanni e Marco - P.IVA 01979250675</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/393468088624" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/catalogo.js"></script>
+    <script>
+        // Image Gallery
+        function changeImage(src, btn) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        // Tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Color Selection
+        document.querySelectorAll('.color-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                document.querySelector('.selection-label strong').textContent = btn.dataset.color;
+            });
+        });
+    </script>
+</body>
+</html>
