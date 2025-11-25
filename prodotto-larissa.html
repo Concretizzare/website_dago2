@@ -250,7 +250,7 @@
                                         <dd>130 mm</dd>
                                     </div>
                                     <div class="spec-row">
-                                        <dt>Posizione uscita fumi</dt>
+                                        <dt>Uscita fumi</dt>
                                         <dd>Posteriore / Superiore</dd>
                                     </div>
                                     <div class="spec-row">
@@ -484,28 +484,51 @@
             }
         }
 
-        // Click su immagine o pulsante zoom
+        // Funzione per calcolare punto di zoom
+        function setZoomOrigin(clientX, clientY) {
+            const rect = galleryMain.getBoundingClientRect();
+            const x = ((clientX - rect.left) / rect.width) * 100;
+            const y = ((clientY - rect.top) / rect.height) * 100;
+            mainImage.style.transformOrigin = `${x}% ${y}%`;
+        }
+
+        // Click su pulsante zoom
         zoomBtn.addEventListener('click', (e) => {
             e.stopPropagation();
+            if (!isZoomed) {
+                mainImage.style.transformOrigin = 'center center';
+            }
             toggleZoom();
         });
 
-        mainImage.addEventListener('click', toggleZoom);
-
-        // Movimento mouse quando zoomed (solo desktop)
-        galleryMain.addEventListener('mousemove', (e) => {
-            if (!isZoomed || window.innerWidth <= 768) return;
-
-            const rect = galleryMain.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-            mainImage.style.transformOrigin = `${x}% ${y}%`;
+        // Click/tap su immagine
+        mainImage.addEventListener('click', (e) => {
+            if (!isZoomed) {
+                // Prima attivazione: zoom sul punto cliccato
+                setZoomOrigin(e.clientX, e.clientY);
+            }
+            toggleZoom();
         });
 
-        // Reset transform origin quando esce
+        // Touch su mobile - zoom sul punto toccato
+        mainImage.addEventListener('touchend', (e) => {
+            if (e.touches.length === 0 && e.changedTouches.length > 0) {
+                const touch = e.changedTouches[0];
+                if (!isZoomed) {
+                    setZoomOrigin(touch.clientX, touch.clientY);
+                }
+            }
+        });
+
+        // Movimento mouse quando zoomed (desktop)
+        galleryMain.addEventListener('mousemove', (e) => {
+            if (!isZoomed || window.innerWidth <= 768) return;
+            setZoomOrigin(e.clientX, e.clientY);
+        });
+
+        // Reset transform origin quando esce (desktop)
         galleryMain.addEventListener('mouseleave', () => {
-            if (isZoomed) {
+            if (isZoomed && window.innerWidth > 768) {
                 mainImage.style.transformOrigin = 'center center';
             }
         });
