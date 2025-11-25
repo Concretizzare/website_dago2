@@ -3,362 +3,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servizio Assistenza Tecnica Caldaie e Stufe - D'Agostino Giovanni e Marco a Notaresco (TE). Vendita stufe a legna e pellet.">
-    <title>D'Agostino Giovanni e Marco - Assistenza Tecnica Caldaie e Stufe</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pap/XcX3o7ztW1jZcdUrI4DhaJp6Gz8i6R8TpsXjL1dRy6ZrQ6EVjYaeIT4ScHoG0Pv+3C3X2kOowINggVK3PQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="//embeds.iubenda.com/widgets/858cd9e4-b436-4d60-a3ea-88a7ff10e705.js"></script>
+    <meta name="description" content="Catalogo stufe a legna e pellet disponibili in pronta consegna - D'Agostino Giovanni e Marco, Notaresco (TE)">
+    <title>Prodotti in Stock | D'Agostino - Stufe e Caldaie</title>
+
+    <!-- Google Fonts - Inter + Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/catalogo.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#home" class="logo">
-            <img src="foto/logo.png" alt="Logo D'Agostino Giovanni e Marco" class="logo-img">
-        </a>
-        <div class="hamburger" id="hamburger" aria-label="Menu di Navigazione" aria-expanded="false" role="button" tabindex="0">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav-links" id="nav-links">
-            <a href="#home">Home</a>
-            <a href="#servizi">Servizi</a>
-            <a href="#prodotti">Prodotti in Stock</a>
-            <a href="#marchi">I Nostri Marchi</a>
-            <a href="#lavori">I Nostri Lavori</a>
-            <a href="#storia">Chi Siamo</a>
-            <a href="#contatti">Contatti</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">Dal 1994 al tuo servizio</div>
-            <h1>D'Agostino Giovanni e Marco</h1>
-            <p class="hero-subtitle">Servizio Assistenza Tecnica Caldaie e Stufe</p>
-            <p class="hero-tagline">Impianti Idrotermosanitari - Gas - Condizionamento</p>
-            <div class="hero-cta">
-                <a href="#contatti" class="btn btn-primary">Richiedi Assistenza</a>
-                <a href="#prodotti" class="btn btn-secondary">Scopri i Prodotti</a>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <span>Scorri</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="servizi" class="services">
+    <!-- Minimal Header -->
+    <header class="header">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Cosa Facciamo</span>
-                <h2>I Nostri Servizi</h2>
-                <p class="section-description">Soluzioni complete per il comfort della tua casa</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Assistenza Tecnica</h3>
-                    <p>Servizio professionale di assistenza e manutenzione per caldaie e stufe dei nostri marchi di fiducia. Interventi rapidi e garantiti in tutta la provincia.</p>
-                    <a href="#contatti" class="service-link">Richiedi intervento <i class="fas fa-arrow-right"></i></a>
-                </div>
+            <a href="prodotti.html" class="logo">
+                <img src="foto/logo.png" alt="D'Agostino" class="logo-img">
+                <span class="logo-text">D'Agostino</span>
+            </a>
+            <nav class="nav">
+                <a href="prodotti.html" class="nav-link active">Catalogo</a>
+            </nav>
+            <a href="https://wa.me/393468088624" class="header-cta" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+                <span>Contattaci</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Impianti Idrotermosanitari</h3>
-                    <p>Installazione e manutenzione completa di impianti idraulici, termici e sanitari per la massima efficienza della tua casa.</p>
-                    <a href="#contatti" class="service-link">Scopri di piu <i class="fas fa-arrow-right"></i></a>
-                </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="prodotti.html" class="mobile-nav-link active">Catalogo</a>
+            <a href="https://wa.me/393468088624" class="mobile-nav-link whatsapp" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Scrivici su WhatsApp
+            </a>
+        </nav>
+    </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h3>Servizi Gas</h3>
-                    <p>Installazione, manutenzione e certificazione di impianti gas domestici e industriali nel rispetto delle normative vigenti.</p>
-                    <a href="#contatti" class="service-link">Richiedi preventivo <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <h3>Climatizzazione</h3>
-                    <p>Installazione e manutenzione di sistemi di condizionamento per garantire il massimo comfort in ogni stagione.</p>
-                    <a href="#contatti" class="service-link">Contattaci <i class="fas fa-arrow-right"></i></a>
-                </div>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>I Nostri Prodotti</h1>
+                <p>Stufe selezionate e disponibili per consegna immediata. Qualita garantita dai migliori marchi del settore.</p>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="prodotti" class="products">
+    <!-- Catalog Section -->
+    <section class="catalog">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Disponibili in Pronta Consegna</span>
-                <h2>Prodotti in Stock</h2>
-                <p class="section-description">Stufe selezionate disponibili per consegna immediata</p>
-            </div>
-            <div class="products-grid">
-                <!-- Product Card - Larissa -->
-                <article class="product-card" data-product="larissa">
-                    <div class="product-badge">Disponibile</div>
-                    <div class="product-image">
-                        <img src="https://www.lanordica-extraflame.com/media/catalog/product/l/a/larissa_antracite_ambiente.png" alt="Stufa a legna Larissa - La Nordica Extraflame" loading="lazy">
-                        <div class="product-overlay">
-                            <a href="prodotto-larissa.html" class="btn btn-primary">Scopri di piu</a>
+            <!-- Filters Sidebar -->
+            <aside class="filters" id="filters">
+                <div class="filters-header">
+                    <h3>Filtri</h3>
+                    <button class="filters-close" id="filtersClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Categoria</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="legna">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Stufe a Legna</span>
+                            <span class="option-count">1</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="pellet">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Stufe a Pellet</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="termostufe">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Termostufe</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="caldaie">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Caldaie</span>
+                            <span class="option-count">0</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Brand Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Marchio</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="nordica">
+                            <span class="checkmark"></span>
+                            <span class="option-label">La Nordica Extraflame</span>
+                            <span class="option-count">1</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="dielle">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Dielle</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="nobis">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Nobis</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="thermital">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Thermital</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="moretti">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Moretti Design</span>
+                            <span class="option-count">0</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="dalessandro">
+                            <span class="checkmark"></span>
+                            <span class="option-label">D'Alessandro</span>
+                            <span class="option-count">0</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Power Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Potenza</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="0-6">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Fino a 6 kW</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="6-10">
+                            <span class="checkmark"></span>
+                            <span class="option-label">6 - 10 kW</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="10-15">
+                            <span class="checkmark"></span>
+                            <span class="option-label">10 - 15 kW</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="power" value="15+">
+                            <span class="checkmark"></span>
+                            <span class="option-label">Oltre 15 kW</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Energy Class Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">
+                        <span>Classe Energetica</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="energy" value="a++">
+                            <span class="checkmark"></span>
+                            <span class="option-label">A++</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="energy" value="a+">
+                            <span class="checkmark"></span>
+                            <span class="option-label">A+</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="energy" value="a">
+                            <span class="checkmark"></span>
+                            <span class="option-label">A</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="filters-reset">
+                    <i class="fas fa-undo"></i>
+                    Resetta Filtri
+                </button>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-area">
+                <!-- Toolbar -->
+                <div class="toolbar">
+                    <div class="toolbar-left">
+                        <button class="filter-toggle" id="filterToggle">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Filtri</span>
+                        </button>
+                        <p class="results-count"><strong>1</strong> prodotto trovato</p>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="sort-select">
+                            <select id="sortSelect">
+                                <option value="relevance">Rilevanza</option>
+                                <option value="name-asc">Nome A-Z</option>
+                                <option value="name-desc">Nome Z-A</option>
+                                <option value="power-asc">Potenza crescente</option>
+                                <option value="power-desc">Potenza decrescente</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="product-content">
-                        <div class="product-brand">
-                            <img src="foto/noridca.png" alt="La Nordica Extraflame" class="brand-mini-logo">
-                        </div>
-                        <h3 class="product-title">Larissa</h3>
-                        <p class="product-category">Stufa a Legna Ventilata</p>
-                        <p class="product-description">Stufa a legna con sistema di controllo automatico della combustione. Design moderno con frontali in ghisa smaltata.</p>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <i class="fas fa-fire"></i>
-                                <span><strong>5,1 - 9,3</strong> kW</span>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Product Card - Larissa -->
+                    <article class="product-card" data-category="legna" data-brand="nordica" data-power="6-10" data-energy="a+">
+                        <a href="prodotto-larissa.html" class="product-link">
+                            <div class="product-image">
+                                <span class="product-badge available">Disponibile</span>
+                                <img src="media/Larissa HR 1.webp" alt="Stufa a legna Larissa - La Nordica Extraflame" loading="lazy">
                             </div>
-                            <div class="spec">
-                                <i class="fas fa-chart-line"></i>
-                                <span><strong>86,9%</strong> Rendimento</span>
+                            <div class="product-info">
+                                <span class="product-brand">La Nordica Extraflame</span>
+                                <h3 class="product-name">Larissa</h3>
+                                <p class="product-category">Stufa a Legna Ventilata</p>
+                                <div class="product-specs">
+                                    <div class="spec">
+                                        <i class="fas fa-fire"></i>
+                                        <span>9,3 kW</span>
+                                    </div>
+                                    <div class="spec">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>86,9%</span>
+                                    </div>
+                                    <div class="spec energy-class">
+                                        <span>A+</span>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="view-details">Scopri di piu <i class="fas fa-arrow-right"></i></span>
+                                </div>
                             </div>
-                            <div class="spec">
-                                <i class="fas fa-leaf"></i>
-                                <span><strong>A+</strong> Classe</span>
+                        </a>
+                    </article>
+
+                    <!-- Placeholder Cards - In arrivo -->
+                    <article class="product-card coming-soon" data-category="pellet" data-brand="" data-power="" data-energy="">
+                        <div class="product-link">
+                            <div class="product-image placeholder">
+                                <span class="product-badge soon">In arrivo</span>
+                                <div class="placeholder-content">
+                                    <i class="fas fa-fire-alt"></i>
+                                    <span>Nuovi prodotti in arrivo</span>
+                                </div>
                             </div>
-                            <div class="spec">
-                                <i class="fas fa-star"></i>
-                                <span><strong>5</strong> Stelle</span>
+                            <div class="product-info">
+                                <span class="product-brand">Prossimamente</span>
+                                <h3 class="product-name">Nuovo Modello</h3>
+                                <p class="product-category">Stufa a Pellet</p>
+                                <div class="product-specs placeholder-specs">
+                                    <span>Dettagli disponibili a breve</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="product-footer">
-                            <a href="prodotto-larissa.html" class="btn btn-outline">Vedi Dettagli</a>
-                            <a href="#contatti" class="btn btn-cta">Richiedi Info</a>
+                    </article>
+
+                    <article class="product-card coming-soon" data-category="termostufe" data-brand="" data-power="" data-energy="">
+                        <div class="product-link">
+                            <div class="product-image placeholder">
+                                <span class="product-badge soon">In arrivo</span>
+                                <div class="placeholder-content">
+                                    <i class="fas fa-fire-alt"></i>
+                                    <span>Nuovi prodotti in arrivo</span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-brand">Prossimamente</span>
+                                <h3 class="product-name">Nuovo Modello</h3>
+                                <p class="product-category">Termostufa</p>
+                                <div class="product-specs placeholder-specs">
+                                    <span>Dettagli disponibili a breve</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </article>
-            </div>
-            <div class="products-cta">
-                <p>Cerchi un modello specifico? Contattaci per verificare la disponibilita.</p>
-                <a href="#contatti" class="btn btn-primary">Contattaci Ora</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brands Section -->
-    <section id="marchi" class="brands">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Partner Ufficiali</span>
-                <h2>I Nostri Marchi di Fiducia</h2>
-                <p class="section-description">Collaboriamo solo con i migliori brand del settore</p>
-            </div>
-            <div class="brands-grid">
-                <a href="https://www.lanordica-extraflame.com" target="_blank" rel="noopener noreferrer" class="brand-card">
-                    <img src="foto/noridca.png" alt="La Nordica Extraflame" loading="lazy">
-                </a>
-                <a href="https://www.diellespa.it" target="_blank" rel="noopener noreferrer" class="brand-card">
-                    <img src="foto/dielle.png" alt="Dielle" loading="lazy">
-                </a>
-                <a href="https://www.nobisfire.it" target="_blank" rel="noopener noreferrer" class="brand-card">
-                    <img src="foto/nobis.png" alt="Nobis" loading="lazy">
-                </a>
-                <a href="https://www.thermital.it" target="_blank" rel="noopener noreferrer" class="brand-card">
-                    <img src="foto/ter.jpeg" alt="Thermital" loading="lazy">
-                </a>
-                <a href="https://www.morettidesign.it" target="_blank" rel="noopener noreferrer" class="brand-card">
-                    <img src="foto/moretti.png" alt="Moretti Design" loading="lazy">
-                </a>
-                <a href="https://caldaiedalessandro.it" target="_blank" rel="noopener noreferrer" class="brand-card">
-                    <img src="foto/dale.jpeg" alt="D'Alessandro Termomeccanica" loading="lazy">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Works Section -->
-    <section id="lavori" class="works">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Portfolio</span>
-                <h2>I Nostri Lavori</h2>
-                <p class="section-description">Alcuni dei nostri interventi recenti</p>
-            </div>
-            <div class="works-grid">
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="foto/foto_marco_e_stufa.jpg" alt="Installazione stufa moderna" loading="lazy">
-                    </div>
-                    <div class="work-content">
-                        <h3>Installazione Stufa di Design</h3>
-                        <p>Marco durante l'installazione di una moderna stufa a pellet, garantendo massima efficienza e sicurezza per i nostri clienti.</p>
-                    </div>
+                    </article>
                 </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="foto/giovanni_a_lavoro.jpg" alt="Lavori idraulici di ristrutturazione" loading="lazy">
-                    </div>
-                    <div class="work-content">
-                        <h3>Ristrutturazione Impianti</h3>
-                        <p>Giovanni al lavoro sulla ristrutturazione di un impianto idraulico. Esperienza pluriennale per interventi precisi e duraturi.</p>
-                    </div>
+
+                <!-- Empty State (hidden by default) -->
+                <div class="empty-state" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>Nessun prodotto trovato</h3>
+                    <p>Prova a modificare i filtri di ricerca</p>
+                    <button class="btn btn-primary">Resetta Filtri</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="storia" class="about">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-badge">Chi Siamo</span>
-                    <h2>La Nostra Storia</h2>
-                    <p class="about-lead">La D'Agostino rappresenta l'eccellenza abruzzese nell'assistenza tecnica e nell'impiantistica, dove la passione e la competenza si tramandano da padre a figlio.</p>
-                    <p>Fondata nel 1994, la nostra azienda familiare si distingue per la capacita di unire tradizione e innovazione, garantendo soluzioni all'avanguardia con un tocco personale.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">30+</span>
-                            <span class="stat-label">Anni di Esperienza</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">1000+</span>
-                            <span class="stat-label">Clienti Soddisfatti</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">6</span>
-                            <span class="stat-label">Marchi Partner</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-features">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Esperienza Trentennale</h3>
-                            <p>Dal 1994 serviamo con dedizione i nostri clienti in tutta la provincia di Teramo.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Innovazione Continua</h3>
-                            <p>Investiamo costantemente nella formazione per offrire le soluzioni piu innovative.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Crescita Costante</h3>
-                            <p>Da Notaresco ci siamo espansi in tutta la regione Abruzzo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contatti" class="contact">
-        <div class="container">
-            <div class="section-header section-header-light">
-                <span class="section-badge section-badge-light">Parliamo</span>
-                <h2>Contattaci</h2>
-                <p class="section-description">Siamo a tua disposizione per qualsiasi informazione</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">
+            <div class="cta-content">
+                <h2>Non trovi quello che cerchi?</h2>
+                <p>Contattaci per verificare la disponibilita di altri modelli o per richiedere un preventivo personalizzato.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+393468088624" class="btn btn-light">
                         <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3>Telefono</h3>
-                    <div class="contact-links">
-                        <a href="tel:+393283394184" class="contact-link">
-                            <span class="contact-name">Giovanni</span>
-                            <span class="contact-value">328 339 4184</span>
-                        </a>
-                        <a href="tel:+393468088624" class="contact-link">
-                            <span class="contact-name">Marco</span>
-                            <span class="contact-value">346 808 8624</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Indirizzo</h3>
-                    <a href="https://maps.google.com/?q=Via+Valle+Vignale,+64024+Notaresco+TE" target="_blank" rel="noopener noreferrer" class="contact-address">
-                        Via Valle Vignale<br>
-                        64024 Notaresco (TE)
+                        Chiamaci
+                    </a>
+                    <a href="https://wa.me/393468088624" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
                     </a>
                 </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Orari</h3>
-                    <p class="contact-hours">
-                        Lun - Ven: 8:00 - 18:00<br>
-                        Sabato: Su appuntamento
-                    </p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Minimal Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="foto/logo.png" alt="D'Agostino Giovanni e Marco" class="footer-logo">
+                    <span class="footer-logo">D'Agostino</span>
                     <p>Assistenza tecnica caldaie e stufe dal 1994</p>
+                    <p class="footer-address">Via Valle Vignale, 64024 Notaresco (TE)</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Link Rapidi</h4>
-                    <a href="#servizi">Servizi</a>
-                    <a href="#prodotti">Prodotti</a>
-                    <a href="#marchi">Marchi</a>
-                    <a href="#contatti">Contatti</a>
-                </div>
-                <div class="footer-legal">
-                    <h4>Legal</h4>
-                    <a href="https://www.iubenda.com/privacy-policy/60658403" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy">Privacy Policy</a>
-                    <a href="https://www.iubenda.com/privacy-policy/60658403/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy">Cookie Policy</a>
+                <div class="footer-contact">
+                    <a href="tel:+393283394184">Giovanni: 328 339 4184</a>
+                    <a href="tel:+393468088624">Marco: 346 808 8624</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 D'Agostino Giovanni e Marco - P.IVA 01979250675</p>
-                <p>Sede: Via Valle Vignale - 64024 Notaresco (TE)</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/393468088624" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/393468088624" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="js/script.js"></script>
-    <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+    <script src="js/catalogo.js"></script>
 </body>
 </html>
