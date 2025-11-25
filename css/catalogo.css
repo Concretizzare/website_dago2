@@ -1081,13 +1081,15 @@ button {
         top: 0;
         left: 0;
         bottom: 0;
-        width: 320px;
-        max-width: 90vw;
+        width: 280px;
+        max-width: 85vw;
         z-index: 200;
         border-radius: 0;
         transform: translateX(-100%);
         transition: transform var(--transition);
         overflow-y: auto;
+        overflow-x: hidden;
+        padding: var(--space-4);
     }
 
     .filters.open {
@@ -1100,6 +1102,20 @@ button {
 
     .filter-toggle {
         display: flex;
+    }
+
+    .filters-header {
+        margin-bottom: var(--space-4);
+        padding-bottom: var(--space-3);
+    }
+
+    .filter-group {
+        margin-bottom: var(--space-4);
+    }
+
+    .filters-reset {
+        margin-top: var(--space-4);
+        margin-bottom: var(--space-6);
     }
 
     /* Overlay */
@@ -1197,9 +1213,9 @@ button {
     }
 
     .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
         bottom: var(--space-4);
         right: var(--space-4);
     }

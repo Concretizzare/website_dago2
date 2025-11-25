@@ -67,15 +67,12 @@
             <div class="product-layout">
                 <!-- Gallery -->
                 <div class="product-gallery">
-                    <div class="gallery-main">
+                    <div class="gallery-main" onclick="openLightbox()">
                         <span class="availability-badge">
                             <i class="fas fa-check-circle"></i>
                             Disponibile
                         </span>
                         <img id="mainImage" src="media/Larissa HR 1.webp" alt="Stufa a legna Larissa - La Nordica Extraflame">
-                        <button class="gallery-zoom" aria-label="Zoom immagine">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
                     </div>
                     <div class="gallery-thumbs">
                         <button class="thumb active" onclick="changeImage('media/Larissa HR 1.webp', this)">
@@ -144,7 +141,7 @@
                                 <i class="fas fa-phone-alt"></i>
                                 Chiama per Info
                             </a>
-                            <a href="https://wa.me/393468088624?text=Salve%20sono%20interessato%20alla%20Larissa" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">
+                            <a href="https://wa.me/393468088624?text=Salve%2C%20scrivo%20per%20informazioni%20riguardo%20La%20Nordica%20Extraflame%20Larissa%2C%20dal%20sito%20assistenzadagostino.it" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">
                                 <i class="fab fa-whatsapp"></i>
                                 Scrivi su WhatsApp
                             </a>
@@ -417,7 +414,7 @@
                         <i class="fas fa-phone-alt"></i>
                         Chiama Ora
                     </a>
-                    <a href="https://wa.me/393468088624?text=Salve%20sono%20interessato%20alla%20Larissa" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <a href="https://wa.me/393468088624?text=Salve%2C%20scrivo%20per%20informazioni%20riguardo%20La%20Nordica%20Extraflame%20Larissa%2C%20dal%20sito%20assistenzadagostino.it" class="btn btn-whatsapp" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i>
                         WhatsApp
                     </a>
@@ -451,6 +448,14 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" aria-label="Chiudi">
+            <i class="fas fa-times"></i>
+        </button>
+        <img id="lightboxImage" src="" alt="Immagine ingrandita">
+    </div>
+
     <script src="js/catalogo.js"></script>
     <script>
         // Image Gallery
@@ -459,6 +464,29 @@
             document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
             btn.classList.add('active');
         }
+
+        // Lightbox
+        function openLightbox() {
+            const mainImage = document.getElementById('mainImage');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            lightboxImage.src = mainImage.src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
 
         // Tabs
         document.querySelectorAll('.tab-btn').forEach(btn => {
